@@ -1,7 +1,6 @@
 #nav-bar{
     display: flex;
     align-items: center;
-    
     background-color: black;
     height: 10vh;
     width: auto;
@@ -27,9 +26,9 @@
     text-align: start;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    height: 45vh;
+    height: fit-content;
+    overflow: hidden;
+
 }
 .blacktxt{
     color: black;
@@ -47,6 +46,7 @@
     display: inline-block;
     position: relative;
     cursor: pointer;
+    margin-top: 10%;
     transition: border 0.2s ease-in-out;
 }
 .footer-btn:hover {
@@ -54,6 +54,8 @@
 }
 #location1-btn, #location2-btn{
     text-align: start;
+    display: flex;
+    
 }
 #subpage-btn{
     width: 15vw;
@@ -141,6 +143,8 @@
     height: auto;
     width: auto;
     overflow: hidden;
+    font-size: 75%;
+    padding-bottom: 5%;
 }
 .txt-description{
     width: 75%;
@@ -149,6 +153,24 @@
 }
 #txt-description-top{
     margin-top: 10%;
+}
+.social-icon{
+    border: 2px solid white;
+    border-radius: 8px;
+    width: fit-content;
+    
+}
+#social-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10%;
+}
+#socials-subsection{
+    display: flex;
+    justify-content: start;
+    width: 20%;
 }
 a{
     cursor: pointer;
