@@ -172,6 +172,45 @@
     justify-content: start;
     width: 20%;
 }
+#menu-section{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.menu-img {
+    z-index: 1;
+    width: 45%;
+    height: auto;
+    margin: 5%;
+    position: relative; /* Needed for absolute positioning of overlay */
+}
+
+.menu-img img {
+    display: block;
+    width: 100%;
+}
+.menu-floating-txt {
+    z-index: 0; /* Ensure overlay is above image */
+    position: absolute;
+    bottom: 100%; /* Start from below the image */
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px;
+    transition: bottom 0.5s ease;
+}
+
+.menu-img:hover .menu-floating-txt {
+    z-index: 1;
+    bottom: 0; /* Slide up on hover */
+}
+
+.menu-item-desc {
+    width: 75%;
+    font-size: 100%;
+}
+
 a{
     cursor: pointer;
     text-decoration: none;
