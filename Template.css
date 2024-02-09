@@ -1,0 +1,138 @@
+#nav-bar{
+    display: flex;
+    align-items: center;
+    
+    background-color: black;
+    height: 10vh;
+    width: auto;
+    box-shadow: 0px 0px 10px gray;
+}
+#header-title{
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 25%;
+    overflow: hidden
+}
+#restaurant-title{
+    color: white;
+}
+#logo-btn{
+    overflow: hidden;
+    display: flex;
+
+}
+.blacktxt{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whitetxt{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#subpage-btn{
+    width: 15vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: border-bottom 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#subpage-btn:hover{
+    border-bottom: 2px solid white;
+    
+}
+.bg-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.floating-txt{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    color: black;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2)), 
+                linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2));
+    font-size: 5vh;
+    width: 90%;
+    max-height: 60vh;
+    text-align: center;
+    overflow-y: auto;
+    
+}
+.description{
+    margin-top: 2vh;
+    width: 50vw;
+    position: relative;
+    left: 25%;
+    margin-bottom: 2vh;
+
+}
+#about-section{
+    width: auto;
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.small-img{
+    width: 75%;
+    height: auto;
+    margin: 10%;
+}
+.sub-section{
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+#restaurant-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+
+}
+#footer-section{
+    display: flex;
+    align-items: start;
+    padding-top: 5%;
+    justify-content: space-around;
+    background-color: black;
+    height: 40vh;
+}
+.txt-description{
+    width: 75%;
+    margin-left: 10%;
+    overflow: hidden;
+}
+#txt-description-top{
+    margin-top: 10%;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 25px;
+}
