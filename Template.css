@@ -176,39 +176,56 @@
     background-color: black;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-.menu-img {
-    z-index: 1;
-    width: 45%;
+.two-menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item{
+    position: relative;
+    width: 35%;
     height: auto;
-    margin: 5%;
-    position: relative; /* Needed for absolute positioning of overlay */
+    border-radius: 8px;
 }
-
-.menu-img img {
-    display: block;
-    width: 100%;
+.menu-item img{
+    width: 95%;
+    margin: 2.5%;
+    border-radius: 16px;
 }
-.menu-floating-txt {
-    z-index: 0; /* Ensure overlay is above image */
+.menu-item:hover .menu-item-name{
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+}
+.menu-item-price{
+    width: 80%;
+}
+.menu-item-name{
     position: absolute;
-    bottom: 100%; /* Start from below the image */
-    left: 0;
+    top: 2.5%;
+    left: 2.5%;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: white;
-    padding: 10px;
-    transition: bottom 0.5s ease;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    height: 90%;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s, bottom 0.2s;
 }
-
-.menu-img:hover .menu-floating-txt {
-    z-index: 1;
-    bottom: 0; /* Slide up on hover */
-}
-
-.menu-item-desc {
+.menu-item-desc{
     width: 75%;
-    font-size: 100%;
+    font-size: 125%;
+    text-align: center;
 }
 
 a{
