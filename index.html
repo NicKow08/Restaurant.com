@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant name</title>
-    <script src = "Template.js"></script>
+    
     <link rel = "stylesheet" href = "Template.css">
 </head>
 <body>
@@ -19,20 +19,48 @@
                 Restaurant Name
             </h1>
         </div>
-        <div class="navbar-item" id = "subpage-btn">
-            <a class = "whitetxt subpage-btn  ">About</a>
+        <div class="navbar-item subpage-btn">
+            <a class = "whitetxt">About</a>
         </div>
-        <div class="navbar-item" id = "subpage-btn">
-            <a class = "whitetxt subpage-btn  ">Menu</a>
+        <div class="navbar-item subpage-btn" >
+            <a class = "whitetxt">Menu</a>
         </div>
-        <div class="navbar-item" id = "subpage-btn">
-            <a class = "whitetxt subpage-btn  ">Contact Us</a>
+        <div class="navbar-item subpage-btn">
+            <a class = "whitetxt">Contact Us</a>
         </div>
-        <div class="navbar-item" id = "subpage-btn">
-            <a class = "whitetxt subpage-btn  ">Reservation</a>
+        <div class="navbar-item subpage-btn">
+            <a class = "whitetxt">Reservation</a>
         </div>
+        <div class = "menu-toggle">
+            <div class = "hamburger">
+                <button id = "navbar-btn" onclick="showdiv()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="#282828"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id = "menu-toggle-page">
+            <ul>
+                <li id = "cancel-btn">
+                    <button id = "cancelbtn" onclick="hidediv()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f7f7f7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="#282828"/>
+                            <path d="M18 6l-12 12" />
+                            <path d="M6 6l12 12" />
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reservation</a></li>
 
-        
+            </ul>
+        </div>
     </div>
     <div id = "about-section">
         <div class="landingpage-ui-curve">
@@ -77,7 +105,7 @@
         <h1 class = "whitetxt" id = "ourmenu">Our Menu</h1>
         <p class = "whitetxt">Get. Relax. Eat.</p>
         
-        <div class = "three-menu-items blacktxt">
+        <div class = "menu-items">
             <div class = "menu-item">
                 <img class = "menu-img" src = "assets/Grilled_Chicken_Breast_Img.jpeg">
                 <div class = "menu-item-name">
@@ -99,8 +127,6 @@
                     <p class = "menu-item-desc">Fresh vegetables stir-fried to perfection in a savory soy sauce, served over steamed rice</p>
                 </div>
             </div>
-        </div>
-        <div class = "three-menu-items blacktxt">
             <div class = "menu-item">
                 <img class = "menu-img" src = "assets/Beef_Lasagna_Img.jpeg">
                 <div class = "menu-item-name">
@@ -122,8 +148,6 @@
                     <p class = "menu-item-desc">A comforting bowl of roasted chicken and vegetable soup, made with fresh ingredients and seasoned to perfection</p>
                 </div>
             </div>
-        </div>
-        <div class = "three-menu-items blacktxt">
             <div class = "menu-item">
                 <img class = "menu-img" src = "assets/Pan_Seared_Salmon_Img.jpeg">
                 <div class = "menu-item-name">
@@ -160,7 +184,7 @@
 
     </div>
     <div id = "footer-section" class = "whitetxt">
-        <div class = "footer-subsection">
+        <div class = "footer-subsection" id = "footer-restaurant-name">
             <h1>Restaurant Name</h1>
         </div>
         <div class = "footer-subsection">
@@ -178,14 +202,14 @@
         <div id = "socials-subsection" class = "footer-subsection">
             <h1>Socials</h1>
             <div id = "social-icons">
-                <a class = "whitetxt social-icon"><img><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
-                <a class = "whitetxt social-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg></a>
-                <a class = "whitetxt social-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg></a>
+                <a class = "whitetxt social-icon"><img><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+                <a class = "whitetxt social-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg></a>
+                <a class = "whitetxt social-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg></a>
             </div>
         </div>
     </div>
     
 
-
+    <script src = "Template.js"></script>
 </body>
 </html>
