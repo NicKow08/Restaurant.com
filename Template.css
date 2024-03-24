@@ -63,17 +63,7 @@
     
 }
 
-@media screen and (max-width: 710px){
-    .subpage-btn{
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    .menu-toggle{
-        visibility: visible;
-        display: block;
-    }
-}
+
 #menu-toggle-page{
     position: fixed;
     top: 0;
@@ -93,6 +83,9 @@
     background: none;
     cursor: pointer;
 }
+#cancelbtn svg{
+    height: 10vh;
+}
 #cancel-btn{
     margin-left: auto;
     display: flex;
@@ -108,6 +101,10 @@
     border: none;
     background: none;
     cursor: pointer;
+    
+}
+#navbar-btn svg{
+    height: 15vh;
 }
 #menu-toggle-page ul{
     width: 100%;
@@ -177,14 +174,7 @@
     overflow-y: auto;
     
 }
-.description{
-    margin-top: 2vh;
-    width: 50vw;
-    position: relative;
-    left: 25%;
-    margin-bottom: 2vh;
-    font-size: 2.5vw;
-}
+
 #about-section{
     width: auto;
     height: 100vh;
@@ -192,18 +182,8 @@
     overflow-x: hidden;
     position: relative; 
 }
-.small-img{
-    width: 75%;
-    height: auto;
-    margin-left: 4.5vw;
-}
-.sub-section{
-    width: 45%;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: auto;
-    padding-top: 5vw;
-}
+
+
 #restaurant-bg{
     display: flex;
     align-items: center;
@@ -212,6 +192,43 @@
     height: 55vw;
     position: relative;
     padding-bottom: 5%;
+}
+.sub-section{
+    width: 45%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.txt-description{
+    width: 75%;
+    margin-left: 10%;
+    overflow: hidden;
+    font-size: 1.5vw;
+
+}
+.txt-description p{
+    font-size: 2vw;
+}
+#txt-description-top{
+    margin-top: 0vw;
+}
+.small-img{
+    width: 75%;
+    height: auto;
+    margin-left: 4.5vw;
+}
+.description{
+    margin-top: 2vh;
+    width: 50vw;
+    position: relative;
+    left: 25%;
+    margin-bottom: 2vh;
+    font-size: 2.5vw;
 }
 #footer-section{
     display: flex;
@@ -228,6 +245,11 @@
 #footer-section p{
     font-size: 1.5vw;
 }
+#socials-subsection{
+    display: flex;
+    justify-content: start;
+    width: 20%;
+}
 #footer-restaurant-name{
     display: flex;
     justify-content: center;
@@ -235,38 +257,7 @@
     height: 100%;
     font-size: 2vw;
     width: 20vw;
-}
-.txt-description{
-    width: 75%;
-    margin-left: 10%;
-    overflow: hidden;
-    font-size: 1.5vw;
-
-}
-.txt-description p{
-    font-size: 2vw;
-}
-#txt-description-top{
-    margin-top: 0vw;
-}
-.social-icon{
-    border: 2px solid white;
-    border-radius: 8px;
-    width: fit-content;
     
-}
-#social-icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    gap: 5px;
-    overflow: hidden;
-    padding-top: 10%;
-}
-#socials-subsection{
-    display: flex;
-    justify-content: start;
-    width: 20%;
 }
 .menu-items{
     display: grid;
@@ -361,6 +352,142 @@
     text-decoration: underline;
 
 }
+@media screen and (max-width: 710px){
+    .subpage-btn{
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .menu-toggle{
+        visibility: visible;
+        display: block;
+    }
+    #restaurant-bg{
+        height: 165vh;
+        flex-direction: column;
+        padding: none;
+    }
+    .sub-section{
+        width: 100%;
+        padding: none;
+        margin: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .sub-section img{
+        padding: none;
+        margin: none;
+        width: 85vw;
+    }
+    .txt-description{
+        font-size: 6vw;
+        width: 85%;
+        margin-left: 5%;
+    }
+    .txt-description p{
+        font-size: 5vw;
+    }
+    .small-img{
+        margin-left: 0;
+        width: 85%;
+    }
+    .floating-txt{
+        height: 100%;
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .floating-txt p{
+        font-size: 5vw;
+        width: 80%;
+        
+    }
+    .description{
+        left: 0;
+        margin-bottom: 0px;
+    }
+    #footer-section{
+        height: 25vh;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-gap: 5%;
+        font-size: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-subsection{
+        width: 100%;
+    }
+    .footer-subsection p{
+        font-size: large;
+    }
+    .footer-subsection a{
+        font-size: 4vw;
+    }
+    #socials-subsection{
+        width: 60%;
+    }
+    #footer-restaurant-name{
+        width: 100%;
+        height: fit-content;
+        
+        margin-bottom: 45%;
+        
+    }
+    #left{
+        margin-left: 10px;
+        text-align: center;
+        margin-bottom: 30%;
+    }
+    #left p{
+        font-size: 2.5vw;
+    }
+    
+    #menu-section p{
+        font-size: 3vw;
+    }
+    .menu-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-item{
+        font-size: 3px;
+    }
+    .menu-items :nth-child(9){
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    #full-menu-btn{
+        width: 100px;
+        font-size: 4vw;
+        margin-top: 5%;
+    }
+}
+
+
+
+.social-icon{
+    border: 2px solid white;
+    border-radius: 8px;
+    width: fit-content;
+    
+}
+#social-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 5px;
+    overflow: hidden;
+    padding-top: 10%;
+}
+
+
+
+
 .menu-ui-curve {
     position: absolute;
     bottom: 0;
